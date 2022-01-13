@@ -5,10 +5,10 @@
     <artifactId>servlet-practices</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>guestbook01</artifactId>
+  <artifactId>guestbook02</artifactId>
   <packaging>war</packaging>
   
-  	<properties>
+    	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
 	</properties>
