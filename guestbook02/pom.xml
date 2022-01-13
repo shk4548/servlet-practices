@@ -22,7 +22,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>guestbook01</finalName>
+		<finalName>guestbook02s</finalName>
 		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
 		<resources>
 			<resource>
