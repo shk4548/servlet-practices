@@ -8,9 +8,9 @@ import com.poscoict.guestbook.vo.GuestbookVo;
 public class GuestbookDaoTest {
 
 	public static void main(String[] args) {
-		//testFindAll();
-//		testInsert();
-		testDelete();
+		testFindAll();
+		//testInsert();
+		//testDelete();
 		
 	}
 	
