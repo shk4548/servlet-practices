@@ -1,12 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<%@ page import = "java.util.List" %>
-<%@ page import = "com.poscoict.guestbook.vo.GuestbookVo" %>
-<%@ page import = "com.poscoict.guestbook.dao.GuestbookDao" %>	
+<%@ page import="java.util.List"%>
+<%@ page import="com.poscoict.guestbook.vo.GuestbookVo"%>
+<%@ page import="com.poscoict.guestbook.dao.GuestbookDao"%>
 
 <%
-	GuestbookDao dao = new GuestbookDao();
-	List<GuestbookVo> list = dao.findAll();
+GuestbookDao dao = new GuestbookDao();
+List<GuestbookVo> list = dao.findAll();
 %>
 
 <!DOCTYPE html>
@@ -19,8 +19,10 @@
 	<form action="/guestbook01/add.jsp" method="post">
 		<table border=1 width=500>
 			<tr>
-				<td>이름</td><td><input type="text" name="name"></td>
-				<td>비밀번호</td><td><input type="password" name="password"></td>
+				<td>이름</td>
+				<td><input type="text" name="name"></td>
+				<td>비밀번호</td>
+				<td><input type="password" name="password"></td>
 			</tr>
 			<tr>
 				<td colspan=4><textarea name="message" cols=60 rows=5></textarea></td>
@@ -32,21 +34,21 @@
 	</form>
 	<br>
 	<%
-		for(GuestbookVo vo : list)	{
+	for (GuestbookVo vo : list) {
 	%>
 	<table width=510 border=1>
 		<tr>
-			<td><%=vo.getNo() %></td>
-			<td><%=vo.getName() %></td>
-			<td><%=vo.getDate() %></td>
+			<td><%=vo.getNo()%></td>
+			<td><%=vo.getName()%></td>
+			<td><%=vo.getDate()%></td>
 			<td><a href="/guestbook01/deleteform.jsp?no=<%=vo.getNo()%>">삭제</a></td>
 		</tr>
 		<tr>
-			<td colspan=4><%=vo.getMesssage().replaceAll("\n","<br>") %></td>
+			<td colspan=4><%=vo.getMesssage().replaceAll("\n", "<br>")%></td>
 		</tr>
 	</table>
 	<%
-		}
+	}
 	%>
 </body>
 </html>

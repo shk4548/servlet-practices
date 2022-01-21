@@ -4,7 +4,7 @@
 <%@ page import = "com.poscoict.emaillist.dao.EmaillistDao" %>
 
 <%
-	EmaillistDao dao = new EmaillistDao();
+EmaillistDao dao = new EmaillistDao();
 	List<EmaillistVo> list = dao.findAll();
 %>
 

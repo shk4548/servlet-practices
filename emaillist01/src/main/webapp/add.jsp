@@ -3,7 +3,8 @@
 <%@ page import = "com.poscoict.emaillist.dao.EmaillistDao" %>
 
 
-<% // 파라미터는 무조건 String
+<%
+// 파라미터는 무조건 String
 
 	// post 방식 반드시 있어야함
 	request.setCharacterEncoding("utf-8");

@@ -4,21 +4,21 @@
 <%@ page import = "com.poscoict.guestbook.vo.GuestbookVo" %>
 <%@ page import = "com.poscoict.guestbook.dao.GuestbookDao" %>	
 
-<% 
+<%
 	request.setCharacterEncoding("utf-8");
 
-	int no = Integer.parseInt(request.getParameter("no"));
-	String password = request.getParameter("password");
-	
-	
-	GuestbookVo vo = new GuestbookVo();
-	vo.setNo(no);
-	vo.setPassword(password);
+		int no = Integer.parseInt(request.getParameter("no"));
+		String password = request.getParameter("password");
+		
+		
+		GuestbookVo vo = new GuestbookVo();
+		vo.setNo(no);
+		vo.setPassword(password);
 
-	new GuestbookDao().delete(vo);
-	
-	response.sendRedirect("/guestbook01");
-%>
+		new GuestbookDao().delete(vo);
+		
+		response.sendRedirect("/guestbook01");
+	%>
 
 <!DOCTYPE html>
 <html>
