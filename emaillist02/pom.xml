@@ -7,7 +7,7 @@
 		<artifactId>servlet-practices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>emaillist01</artifactId>
+	<artifactId>emaillist02</artifactId>
 	<packaging>war</packaging>
 
 	<properties>
@@ -38,7 +38,7 @@
 	</dependencies>
 
 	<build>
-		<finalName>emaillist01</finalName>
+		<finalName>emaillist02</finalName>
 		<sourceDirectory>${project.basedir}/src/main/java</sourceDirectory>
 		<resources>
 			<resource>
@@ -81,7 +81,7 @@
 				<version>1.1</version>
 				<configuration>
 					<url>http://127.0.0.1:8080/manager/text</url>
-					<path>/emaillist01</path>
+					<path>/emaillist02</path>
 					<username>admin</username>
 					<password>manager</password>
 				</configuration>
